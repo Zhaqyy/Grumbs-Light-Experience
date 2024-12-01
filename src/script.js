@@ -14,7 +14,7 @@ import nFragment from "./shaders/noise/fragment.glsl";
 
 
 // const stats = new Stats();
-document.body.appendChild(stats.dom);
+// document.body.appendChild(stats.dom);
 
 // Canvas and scene
 const canvas = document.querySelector('canvas.webgl')
