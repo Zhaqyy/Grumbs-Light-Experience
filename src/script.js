@@ -3,7 +3,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
-import * as Stats from 'stats.js'
+// import * as Stats from 'stats.js'
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
@@ -13,7 +13,7 @@ import nVertex from "./shaders/noise/vertex.glsl";
 import nFragment from "./shaders/noise/fragment.glsl";
 
 
-const stats = new Stats();
+// const stats = new Stats();
 document.body.appendChild(stats.dom);
 
 // Canvas and scene
@@ -313,12 +313,12 @@ const tick = () => {
 
   
     // Render
-    stats.begin()
+    // stats.begin()
     renderer.render(scene, camera)
     composer.render();
     // init()
-    stats.end()
-    stats.update()
+    // stats.end()
+    // stats.update()
     // Call tick again on the next frame
     window.requestAnimationFrame(tick)
 }
